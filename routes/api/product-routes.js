@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Product, Category, Tag, ProductTag } = require('../../models');
 
-// The `/api/products` endpoint
+// This is the `/api/products` endpoint
 
 // get all products
 router.get('/', (req, res) => {
@@ -137,7 +137,7 @@ router.put('/:id', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
-  // delete one product by its `id` value
+  // delete one product by its ID value
   Product.destroy({
     where: {
       id: req.params.id,

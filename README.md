@@ -25,7 +25,7 @@
 ## Installation
 
 - Clone this repository.
-- run npm install in the Develop directory.
+- run "npm install express sequelize mysql2" in the Develop directory.
 - Add and edit .env file to your configuration.
 - Create your database by running "source db/schema.sql" from the MySQL shell.
 - Run "node seeds/index.js" at the command line if you wish to further test with provided database.
