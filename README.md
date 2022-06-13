@@ -20,7 +20,8 @@
 
 
 ### Usage
-
+- show the Database by running the following SQL commands:
+    - 
 
 ## Installation
 
@@ -30,6 +31,10 @@
 - Create your database by running "source db/schema.sql" from the MySQL shell.  From here you can add and edit data in that database.
 - Run "node seeds/index.js" at the command line if you wish to further test with the database provided.
 - Start server and connect to database by running "npm start" at your command line.
+    - navigate the SQL tables by typing:
+    - USE ecommerce_db;
+    - source db/schema.sql;
+    - SHOW TABLES;
 
 
 ## User Story
@@ -58,3 +63,4 @@ THEN I am able to successfully create, update, and delete data in my database
 - Sequelize
 - Insomnia
 - Express.js
+- Heroku app: desolate-sea-17608

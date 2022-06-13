@@ -16,6 +16,7 @@ app.use(express.urlencoded({
 app.use(routes);
 
 // sync sequelize models to the database, then turn on the server
+// "force: true" will recreate the tables if thare are any association changes
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => {
   console.log(`Now listening on port ${PORT}!`)

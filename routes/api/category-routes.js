@@ -7,14 +7,15 @@ router.get('/', (req, res) => {
   // find all categories
   // be sure to include its associated Products
   Category.findAll({
-    include: {
-      model: Product,
-      attributes: ["id", "product_name", "price", "stock", "category_id"],
-    },
+    include: [Product]
+    // {
+    //   model: Product,
+    //   attributes: ["id", "product_name", "price", "stock", "category_id"],
+    // }
   })
     .then((dbCategoryData) => {
       if (!dbCategoryData) {
-        res.status(404).json({ message: "I did not find these categories." });
+        res.status(404).json({ message: "Could not find these categories." });
         return;
       }
       res.json(dbCategoryData);
@@ -32,7 +33,9 @@ router.get('/:id', (req, res) => {
     where: {
       id: req.params.id,
     },
-    include: {
+    include: 
+    // [Product]
+    {
       model: Product,
       attributes: ["id", "product_name", "price", "stock", "category_id"],
     },
