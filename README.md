@@ -26,7 +26,7 @@
 ## Installation
 
 - Clone this repository.
-- run "npm install express sequelize mysql2" in the main directory to configure these methods in your directory.
+- run "npm install express sequelize mysql2 bcrypt" in the main directory to configure these methods in your directory.
 - Add and edit an .env file to your configuration, including your MySQL username, and MySQL password.
 - Create your database by running "source db/schema.sql" from the MySQL shell.  From here you can add and edit data in that database.
 - Run "node seeds/index.js" at the command line if you wish to further test with the database provided.
