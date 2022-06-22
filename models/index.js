@@ -5,6 +5,11 @@ const Tag = require('./Tag');
 const ProductTag = require('./ProductTag');
 const User = require('./User');
 
+// create associations
+User.hasMany(Product, {
+  foreignKey: 'user_id'
+});
+
 // Products belongsTo Category
 Product.belongsTo(Category, {
   foreignKey: "category_id",
