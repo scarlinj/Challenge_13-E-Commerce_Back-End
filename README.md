@@ -5,7 +5,7 @@
 > - [Title / Repository Name](#title--repository-name)
 >   - [Table of contents](#table-of-contents)
 >   - [About / Synopsis](#about--synopsis)
->   - [Features](#features)
+>   - [Demo](#demo)
 >   - [Usage](#usage)
 >   - [Installation](#installation)
 >   - [User Story](#user-story)
@@ -16,12 +16,11 @@
 
 ## About / Synopsis
 
-## Features
+## Demo
 
+Watch the video demonstration at the link below:
 
-## Usage
-- show the Database by running the following SQL commands:
-
+https://drive.google.com/file/d/1dSbOPN3XcHz_70F7-phd4sxEA2J_50ML/view
 
 ## Installation
 
@@ -30,11 +29,17 @@
 - Add and edit an .env file to your configuration, including your MySQL username, and MySQL password.
 - Create your database by running "source db/schema.sql" from the MySQL shell.  From here you can add and edit data in that database.
 - Run "node seeds/index.js" at the command line if you wish to further test with the database provided.
-- Start server and connect to database by running "npm start" at your command line.
+
+
+## Usage
+- Start server and connect to database by running "npm start" at your command line.  This will launch the program in your port 3001.
+- Log into 
     - navigate the SQL tables by typing:
     - USE ecommerce_db;
     - source db/schema.sql;
     - USE ecommerce_db;
+
+- show the Database by running the following SQL commands:
     - SHOW TABLES;
 
 
