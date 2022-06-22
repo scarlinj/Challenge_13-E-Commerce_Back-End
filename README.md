@@ -19,9 +19,9 @@
 ## Features
 
 
-### Usage
+## Usage
 - show the Database by running the following SQL commands:
-    - 
+
 
 ## Installation
 
@@ -34,6 +34,7 @@
     - navigate the SQL tables by typing:
     - USE ecommerce_db;
     - source db/schema.sql;
+    - USE ecommerce_db;
     - SHOW TABLES;
 
 
